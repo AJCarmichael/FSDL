@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development - Lecture 1</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-color: #f5f7fa;">
+    
+    <!-- Header Section -->
+    <header style="background-color: #2c3e50; color: white; text-align: center; padding: 2rem;">
+        <h1 style="margin: 0; font-size: 2.5rem;">Introduction to Full Stack Development</h1>
+        <p style="margin-top: 0.5rem; opacity: 0.9;">Lecture 1: Fundamentals of Web Architecture</p>
+    </header>
+
+    <!-- Main Content Container -->
+    <div style="max-width: 1200px; margin: 2rem auto; padding: 0 1rem;">
+        
+        <!-- Overview Section -->
+        <section style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem;">Course Overview</h2>
+            <div style="display: flex; gap: 2rem; margin-top: 1.5rem;">
+                <img src="https://via.placeholder.com/300x200.png?text=Web+Development" alt="Web Development" style="border-radius: 8px; max-width: 300px;">
+                <div>
+                    <p style="line-height: 1.6; color: #34495e;">
+                        Full Stack Development encompasses both client-side (front-end) and server-side (back-end) development.
+                        This course will cover:
+                    </p>
+                    <ul style="columns: 2; list-style-type: square; color: #3498db;">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Node.js & Express</li>
+                        <li>Database Systems</li>
+                        <li>React Framework</li>
+                        <li>RESTful APIs</li>
+                        <li>DevOps Basics</li>
+                        <li>Security Fundamentals</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack Table -->
+        <section style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem;">Technology Stack Comparison</h2>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 1.5rem;">
+                <thead>
+                    <tr style="background-color: #3498db; color: white;">
+                        <th style="padding: 1rem; text-align: left;">Layer</th>
+                        <th style="padding: 1rem; text-align: left;">Technologies</th>
+                        <th style="padding: 1rem; text-align: left;">Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #ddd;">
+                        <td style="padding: 1rem; background-color: #f8f9fa;">Front-End</td>
+                        <td style="padding: 1rem;">HTML, CSS, JavaScript</td>
+                        <td style="padding: 1rem;">User Interface & Client-side Logic</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #ddd;">
+                        <td style="padding: 1rem; background-color: #f8f9fa;">Back-End</td>
+                        <td style="padding: 1rem;">Node.js, Python, Java</td>
+                        <td style="padding: 1rem;">Server-side Logic & Processing</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #ddd;">
+                        <td style="padding: 1rem; background-color: #f8f9fa;">Database</td>
+                        <td style="padding: 1rem;">MySQL, MongoDB, PostgreSQL</td>
+                        <td style="padding: 1rem;">Data Storage & Management</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Key Concepts -->
+        <section style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem;">Core Concepts</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+                <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px;">
+                    <h3 style="color: #3498db; margin-top: 0;">Client-Server Model</h3>
+                    <img src="https://via.placeholder.com/400x200.png?text=Client-Server+Architecture" alt="Client-Server" style="width: 100%; border-radius: 6px; margin-bottom: 1rem;">
+                    <p style="color: #34495e;">The foundation of web applications where client devices request services from servers over a network.</p>
+                </div>
+                <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px;">
+                    <h3 style="color: #3498db; margin-top: 0;">HTTP Protocol</h3>
+                    <img src="https://via.placeholder.com/400x200.png?text=HTTP+Protocol" alt="HTTP Protocol" style="width: 100%; border-radius: 6px; margin-bottom: 1rem;">
+                    <p style="color: #34495e;">The application layer protocol for distributed, collaborative, hypermedia information systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Setup Requirements -->
+        <section style="background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem;">Development Setup</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 1.5rem;">
+                <div>
+                    <h3 style="color: #3498db;">Essential Tools</h3>
+                    <ul style="list-style-type: circle; color: #34495e;">
+                        <li>Code Editor (VS Code)</li>
+                        <li>Git Version Control</li>
+                        <li>Node.js & npm</li>
+                        <li>Browser Developer Tools</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: #3498db;">Recommended Practices</h3>
+                    <ul style="list-style-type: circle; color: #34495e;">
+                        <li>Semantic HTML Markup</li>
+                        <li>Mobile-First Design</li>
+                        <li>Modular Code Structure</li>
+                        <li>Regular Commits</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 1.5rem; margin-top: 3rem;">
+        <p style="margin: 0;">© 2023 Full Stack Development Course. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
