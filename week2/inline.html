@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="margin:0;font-family:'Segoe UI',sans-serif;background:#f0f2f5;">
+    <!-- Complex Navigation -->
+    <nav style="display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,#6366f1,#8b5cf6);padding:1rem 5%;color:white;">
+        <div style="display:flex;gap:2rem;align-items:center;">
+            <i class="fas fa-rocket" style="font-size:1.5rem;"></i>
+            <div style="display:flex;gap:1.5rem;">
+                <a href="#" style="color:white;text-decoration:none;padding:0.5rem 1rem;border-radius:8px;transition:all 0.3s;" onmouseover="this.style.background='#4f46e5'" onmouseout="this.style.background='transparent'">Dashboard</a>
+                <a href="#" style="color:white;text-decoration:none;padding:0.5rem 1rem;border-radius:8px;transition:all 0.3s;" onmouseover="this.style.background='#4f46e5'" onmouseout="this.style.background='transparent'">Analytics</a>
+            </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:center;">
+            <div style="position:relative;">
+                <i class="fas fa-bell" style="font-size:1.2rem;"></i>
+                <span style="position:absolute;top:-5px;right:-10px;background:#ef4444;color:white;padding:2px 6px;border-radius:50%;font-size:0.8rem;">3</span>
+            </div>
+            <img src="https://via.placeholder.com/40" alt="Profile" style="border-radius:50%;">
+        </div>
+    </nav>
+
+    <!-- Data Grid -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:2rem;padding:2rem 5%;">
+        <div style="background:white;border-radius:16px;padding:1.5rem;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+            <h3 style="margin:0 0 1rem 0;color:#1f2937;">Performance Metrics</h3>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+                <span style="color:#6b7280;">CPU Usage</span>
+                <div style="background:#eef2ff;padding:4px 12px;border-radius:20px;color:#6366f1;">72%</div>
+            </div>
+            <!-- Add more metrics -->
+        </div>
+    </div>
+</body>
+</html>

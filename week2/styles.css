@@ -1,0 +1,41 @@
+/* Modern Glass Morphism Design */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --blur: blur(10px);
+    --accent: #8b5cf6;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(45deg, #0f172a, #1e293b);
+    color: white;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: var(--glass-bg);
+    backdrop-filter: var(--blur);
+    padding: 1rem 5%;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    border-radius: 16px;
+    margin: 1rem auto;
+    left: 0;
+    right: 0;
+}
+
+.project-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--blur);
+    border-radius: 24px;
+    padding: 2rem;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.15);
+}
