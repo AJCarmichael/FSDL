@@ -38,6 +38,8 @@
     }
     .cell.x { color: #ff6347; }
     .cell.o { color: #1e90ff; }
+    .cell.x::before { content: 'X'; }
+    .cell.o::before { content: 'O'; }
   </style>
 </head>
 <body>
@@ -112,6 +114,7 @@
       if (winner) {
         setTimeout(() => alert(winner === 'tie' ? 'It\'s a tie!' : `${winner.toUpperCase()} wins!`), 100);
         cells.fill(null);
+        currentPlayer = 'x'; // Reset to 'x' for a new game
         updateBoard();
       }
     }

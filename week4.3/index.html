@@ -6,9 +6,9 @@
   <title>Week 4.3 Applications</title>
   <style>
     body {
-      background: #121212;
-      color: #ffffff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f0f0;
+      color: #000000;
+      font-family: 'Times New Roman', Times, serif;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -17,12 +17,24 @@
       margin: 0;
     }
     a {
-      color: #1e90ff;
+      color: #0000ff;
       text-decoration: none;
       margin: 10px 0;
     }
     a:hover {
       text-decoration: underline;
+    }
+    .back-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0000ff;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .back-button:hover {
+      background-color: #0000cc;
     }
   </style>
 </head>
@@ -35,5 +47,6 @@
     <a href="age-calculator.html">Age Calculator</a>
     <a href="bank-calculator.html">Bank Calculator</a>
   </nav>
+  <button class="back-button" onclick="window.location.href='index.html'">Back to Index</button>
 </body>
 </html>
