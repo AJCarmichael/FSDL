@@ -16,7 +16,7 @@ function RegistrationForm({ onLogin }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onLogin();
+    onLogin(formData.username);
   };
 
   return (

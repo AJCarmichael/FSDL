@@ -5,8 +5,10 @@ import ExtraComponent from './components/ExtraComponent';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState('');
 
-  const handleLogin = () => {
+  const handleLogin = (username) => {
+    setUsername(username);
     setIsLoggedIn(true);
   };
 
@@ -17,6 +19,7 @@ function App() {
         <RegistrationForm onLogin={handleLogin} />
       ) : (
         <>
+          <h2>Welcome, {username}!</h2>
           <Counter />
           <ExtraComponent />
         </>
