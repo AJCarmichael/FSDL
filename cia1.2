@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Number Input</title>
+</head>
+<body>
+    <script>
+        function checkNumber() {
+            try {
+                let userInput = prompt("Enter a number:");
+
+                // Check if the input is null (user cancels prompt)
+                if (userInput === null) {
+                    throw "Input was canceled.";
+                }
+
+                let number = Number(userInput);
+
+                // Check if input is a valid number
+                if (isNaN(number)) {
+                    throw "Invalid input! Please enter a valid number.";
+                }
+
+                alert("Valid number entered: " + number);
+            } catch (error) {
+                alert("Error: " + error);
+            }
+        }
+
+        checkNumber(); // Run the function when the page loads
+    </script>
+</body>
+</html>
